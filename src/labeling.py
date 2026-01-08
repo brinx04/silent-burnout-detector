@@ -20,4 +20,4 @@ df["burnout_risk"] = (df["burnout_score"] >= 2).astype(int)
 df.to_csv("data/processed/labeled_features.csv", index=False)
 
 
-print(" Labeling complete")
+print("Labeling complete")

@@ -55,8 +55,8 @@ def explain_dev(dev_id, top_k=3):
     print("Key Contributing Factors:")
 
     for _, r in top_factors.iterrows():
-        direction = "↑" if r["value"] > r["baseline"] else "↓"
+        direction = "increased" if r["value"] > r["baseline"] else "decreased"
         print(f"• {r['feature']} {direction}")
 
 if __name__ == "__main__":
-    explain_dev("D14")
+    explain_dev("D14") #as an example

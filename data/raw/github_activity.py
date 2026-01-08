@@ -5,7 +5,7 @@ import random
 
 np.random.seed(42)
 
-NUM_DEVS = 30
+NUM_DEVS = 5000
 DAYS = 90
 developers = [f"D{str(i).zfill(2)}" for i in range(1, NUM_DEVS + 1)]
 
@@ -83,4 +83,4 @@ for dev in developers:
 comm_df = pd.DataFrame(rows,columns=["dev_id","date","messages_sent","avg_response_hours"])
 
 comm_df.to_csv("data/raw/communication_activity.csv", index=False)
-print(" communication_activity.csv generated")
+print("communication_activity.csv generated")
